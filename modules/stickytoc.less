@@ -5,6 +5,7 @@
 	clear: both;
 	float: left;
 	margin-bottom: 1rem;
+
 	&.force-sticky {
 		top: 80px;
 	}
@@ -29,6 +30,7 @@
 	margin: 0 1rem 0 0;
 	align-self: flex-start;
 	min-width: 16rem;
+
 	&.force-sticky {
 		margin-top: 20px;
 	}
@@ -46,9 +48,10 @@
 }
 
 .stickytoc #toc .toctitle h2 {
+	/* stylelint-disable-next-line font-weight-notation */
 	font-weight: 700;
 	font-size: 15px;
-	//color: white;
+	/* color: white; */
 }
 
 .stickytoc #toc .toctogglespan {
@@ -57,12 +60,14 @@
 
 .stickytoc ul li {
 	font-size: 16px;
-	color: #355B84;
+	color: #355b84;
+
 	a {
-		color: #355B84;
+		color: #355b84;
 	}
+
 	.tocnumber {
-		color: #355B84;
+		color: #355b84;
 	}
 }
 
@@ -76,17 +81,20 @@
 	flex-direction: row;
 }
 
-@media (max-width: 760px) {
+@media ( max-width: 760px ) {
 	.stickytoc-parent {
 		flex-direction: column;
 	}
+
 	.stickytoc.sticky-top {
 		position: relative;
 		width: 100%;
 	}
+
 	.layout-stickyhead .stickytoc,
 	.stickytoc {
 		top: 0;
+
 		&.force-sticky {
 			top: 0;
 		}
@@ -95,6 +103,5 @@
 
 /* fixes z-index collision with Chameleon navbar */
 body > nav#mw-navigation {
-	z-index: 1020;	
+	z-index: 1020;
 }
-
