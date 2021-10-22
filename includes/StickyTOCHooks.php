@@ -13,23 +13,22 @@ use Skin;
 class StickyTOCHooks {
 
 	/**
-	 * @param OutputPage $out
-	 * @param Skin $skin
+	 * @param OutputPage &$out
+	 * @param Skin &$skin
 	 */
 	public static function onBeforePageDisplay( &$out, &$skin ) {
-		$out->addModules( array( 'ext.stickytoc' ) );
+		$out->addModules( [ 'ext.stickytoc' ] );
 	}
 
 	/**
-	 * @param array $vars
+	 * @param array &$vars
 	 * @param string $skin
 	 * @param Config $config
 	 */
 	public static function onResourceLoaderGetConfigVars( &$vars, $skin, $config ) {
-		$vars['wgStickyTOCFloat'] = $config->get('StickyTOCFloat');
-		$vars['wgStickyTOCNavbar'] = $config->get('StickyTOCNavbar');
-		$vars['wgStickyTOCReplaceTitle'] = $config->get('StickyTOCReplaceTitle');
+		$vars['wgStickyTOCFloat'] = $config->get( 'StickyTOCFloat' );
+		$vars['wgStickyTOCNavbar'] = $config->get( 'StickyTOCNavbar' );
+		$vars['wgStickyTOCReplaceTitle'] = $config->get( 'StickyTOCReplaceTitle' );
 	}
 
 }
-
