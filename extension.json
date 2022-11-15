@@ -16,8 +16,7 @@
 	},
 	"MessagesDirs": {
 		"StickyTOC": [
-			"i18n",
-			"i18n/api"
+			"i18n"
 		]
 	},
 	"AutoloadClasses": {
