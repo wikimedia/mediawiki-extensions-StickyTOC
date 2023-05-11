@@ -1,4 +1,4 @@
-# SitckyTOC
+# StickyTOC
 
 Makes the TOC float to a page side and act as a sticky panel
 
@@ -23,6 +23,7 @@ default it's set to `left`, but it can be changed to `right` or `aside`:
 * `$wgStickyTOCNavbar` - If set to `true`m will force the TOC to treat the current layout
 navbar as being sticky. By default this is set to `false`. There is no need to change
   this for the default Chameleon `stickyhead.xml` layout, only for custom ones.
+* `$wgStickyTOCReplaceTitle` - If set to true will replace TOC title with article title. By default this is set to false.
 
 Created for the National Gallery of Art HEALD wiki.
 
